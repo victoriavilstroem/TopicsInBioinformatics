@@ -1,0 +1,12 @@
+string	runtime
+all_a_str/all_a_10000.txt	0:00:03.506954
+all_a_str/all_a_20000.txt	0:00:14.346256
+all_a_str/all_a_30000.txt	0:00:30.893096
+all_a_str/all_a_40000.txt	0:00:54.561459
+all_a_str/all_a_50000.txt	0:01:25.056644
+all_a_str/all_a_60000.txt	0:02:03.111079
+all_a_str/all_a_70000.txt	0:02:52.147688
+all_a_str/all_a_80000.txt	0:03:40.096921
+all_a_str/all_a_90000.txt	0:04:36.864562
+all_a_str/all_a_100000.txt	0:05:43.982807
+all_a_str/all_a_200000.txt	1:31:09.947825
