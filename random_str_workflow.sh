@@ -2,13 +2,13 @@
 set -e
 
 LOGFILE="random_str_logs.txt"
-
 echo -e "string\truntime" > "$LOGFILE"
 
-for file in $(ls random_str/*.txt | sort -V); do
-    echo "Running on $LOGFILE ..."
+export LOGFILE  # make sure child processes see this variable
 
-    python3 main.py "$file" "$LOGFILE" "False"
-done
+ls random_str/*.txt | sort -V | xargs -n 1 -P 1 -I {} bash -c '
+    echo "Running on {} ..."
+    python3 main.py "{}" "$LOGFILE" "False"
+'
 
 echo "All runs complete. Results saved in $LOGFILE"

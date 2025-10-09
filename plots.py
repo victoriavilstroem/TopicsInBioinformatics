@@ -57,7 +57,7 @@ def plot_runtime_log(log_file):
     plt.plot(sizes, runtimes_minutes, marker='o', linestyle='-', linewidth=2, markersize=8)
     plt.xlabel('Input Size', fontsize=12)
     plt.ylabel('Runtime (minutes)', fontsize=12)
-    plt.title('Runtime vs Input Size', fontsize=14, fontweight='bold')
+    plt.title(log_file + ' Runtime vs Input Size', fontsize=14, fontweight='bold')
     plt.grid(True, alpha=0.3)
     plt.tight_layout()
 
@@ -66,5 +66,5 @@ def plot_runtime_log(log_file):
 
 # Usage
 if __name__ == "__main__":
-    log_file = "all_a_str_logs.txt"  # Change this to your log file path
-    plot_runtime_log(log_file)
+    plot_runtime_log("all_a_str_logs.txt")
+    plot_runtime_log("random_str_logs.txt")
